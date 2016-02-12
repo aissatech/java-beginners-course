@@ -20,32 +20,11 @@ public class ClientRapportinoDipendente {
 		
 		//riempio i giorni di febbraio,
 		List<GiorniRapportino> listaGiorni = new ArrayList<GiorniRapportino>();
-		//listaGiorni = client.setListaGiorni("01/02/2016");
 		listaGiorni = client.setListaGiorni("01/02");
 		
-		// test lista giorni
-//		System.out.println(listaGiorni.size());
-//		Iterator<GiorniRapportino> iter = listaGiorni.iterator();
-//		while(iter.hasNext()){
-//			GiorniRapportino gr = iter.next();
-//			System.out.println( gr.getGiornoSettimana() + "-" +  gr.getData());
-//		}
-		
 		// riempio il rapportino mensile
-//		RapportinoMensile rapp = new RapportinoMensile();
-//		rapp.setMese("febbraio");
-//		rapp.setAnno("2016");
-//		rapp.setGiorni(listaGiorni);
 		RapportinoMensile rapp = client.setDatiRapportino("febbraio", "2016", listaGiorni);		
-	
-		// test rapportino
-//		Iterator<GiorniRapportino> iter1 = rapp.getGiorni().iterator();
-//		while(iter1.hasNext()){
-//			GiorniRapportino gr = iter1.next();
-//			System.out.println( rapp.getMese() + " " + rapp.getAnno() + " " + 
-//			gr.getGiornoSettimana() + "-" +  gr.getData());
-//		}
-		
+
 		// setto i vari curriculum
 		Curriculum cv1 = client.setDatiCurriculum("master", "CEO");		
 		Curriculum cv2 = client.setDatiCurriculum("laurea", "Analista");		
@@ -75,7 +54,6 @@ public class ClientRapportinoDipendente {
 		// aggiungo 1 al numero del giorno
 		while(leDate < 30){	
 			GiorniRapportino giorno = new GiorniRapportino();
-			//giorno.setData( leDate + data.substring(2, 10));
 			giorno.setData( leDate + data.substring(2, 5));
 			
 			//aggiungo i giorni alla lista			
