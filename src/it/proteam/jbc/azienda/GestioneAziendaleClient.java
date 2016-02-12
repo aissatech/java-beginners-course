@@ -71,7 +71,7 @@ public class GestioneAziendaleClient {
 		return veicolo;
 	}
 	public void scriviDati(Azienda az){
-		String file = "C:/Users/e3cboban.CORPGEN/workspace/ExamLab/azienda.txt";
+		String file = "azienda.txt";
 		FileWriter writer = null;
 		try {
 			writer = new FileWriter(file);
