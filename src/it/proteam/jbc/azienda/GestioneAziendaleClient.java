@@ -92,8 +92,7 @@ public class GestioneAziendaleClient {
 							dip.getCitta() + "-" + dip.getIndirizzo() + "-" + dip.getSesso() + "-" + dip.getRuolo() + ", " +
 							dip.getVeicolo().getTipo() + "-" + dip.getVeicolo().getMarca() + 
 							"-" + dip.getVeicolo().getModello()+ "-" + dip.getVeicolo().getTarga() + "\n");
-					
-					i++;
+				
 			} 
 			bw.flush();
 			bw.close();
