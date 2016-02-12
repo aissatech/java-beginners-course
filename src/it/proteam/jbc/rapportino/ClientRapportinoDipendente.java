@@ -19,21 +19,24 @@ public class ClientRapportinoDipendente {
 		ClientRapportinoDipendente client = new ClientRapportinoDipendente();
 		
 		//riempio i giorni di febbraio,
-		List<GiorniRapportino> listaGiorni = new ArrayList<GiorniRapportino>();
-		listaGiorni = client.setListaGiorni("01/02");
+		List<GiorniRapportino> giorniDip1 = client.setGiorniDipendente1("01/02");
+		List<GiorniRapportino> giorniDip2 = client.setGiorniDipendente2("01/02");
+		List<GiorniRapportino> giorniDip3 = client.setGiorniDipendente3("01/02");
 		
 		// riempio il rapportino mensile
-		RapportinoMensile rapp = client.setDatiRapportino("febbraio", "2016", listaGiorni);		
-
+		RapportinoMensile rapp1 = client.setDatiRapportino("febbraio", "2016", giorniDip1);
+		RapportinoMensile rapp2 = client.setDatiRapportino("febbraio", "2016", giorniDip2);
+		RapportinoMensile rapp3 = client.setDatiRapportino("febbraio", "2016", giorniDip3);
+		
 		// setto i vari curriculum
 		Curriculum cv1 = client.setDatiCurriculum("master", "CEO");		
 		Curriculum cv2 = client.setDatiCurriculum("laurea", "Analista");		
 		Curriculum cv3 = client.setDatiCurriculum("diploma", "Programmatore");
 		
 		// rimepio i dati del dipendente
-		Dipendente dip1 = client.setDatiDipendente("Anna", "Bianchi", "a@gmail.com", "Roma", "Via della Pace 31", "F", cv1, rapp);
-		Dipendente dip2 = client.setDatiDipendente("Paolo", "Pugliese", "b@gmail.com", "Roma", "Via del Sole 31", "M", cv2, rapp);
-		Dipendente dip3 = client.setDatiDipendente("Carol", "Neri", "c@gmail.com", "Roma", "Via Taranto 95", "F", cv3, rapp);
+		Dipendente dip1 = client.setDatiDipendente("Anna", "Bianchi", "a@gmail.com", "Roma", "Via della Pace 31", "F", cv1, rapp1);
+		Dipendente dip2 = client.setDatiDipendente("Paolo", "Pugliese", "b@gmail.com", "Roma", "Via del Sole 31", "M", cv2, rapp2);
+		Dipendente dip3 = client.setDatiDipendente("Carol", "Neri", "c@gmail.com", "Roma", "Via Taranto 95", "F", cv3, rapp3);
 		
 		List<Dipendente> dipendenti = new ArrayList<Dipendente>();
 		dipendenti.add(dip1);
@@ -42,10 +45,9 @@ public class ClientRapportinoDipendente {
 		
 		client.scriviDati(dipendenti);
 	}
-	
-	// riempio la lista dei giorni del mese 
-	// partendo dal primo del mese (in questo caso febbraio)
-	public List<GiorniRapportino> setListaGiorni(String data){		
+
+	// riempio la lista dei giorni del mese per il dip1
+	public List<GiorniRapportino> setGiorniDipendente1(String data){		
 		List<GiorniRapportino> giorni = new ArrayList<GiorniRapportino>();
 		
 		// mi prendo il numero del giorno dalla data (01, 02 ecc)
@@ -53,7 +55,93 @@ public class ClientRapportinoDipendente {
 		
 		// aggiungo 1 al numero del giorno
 		while(leDate < 30){	
-			GiorniRapportino giorno = new GiorniRapportino();
+			GiorniRapportino giorno = new GiorniRapportino();			
+			giorno.setData( leDate + data.substring(2, 5));
+			
+			//aggiungo i giorni alla lista			
+			if(leDate == 1 || leDate == 8 || leDate == 15 || leDate == 22 || leDate == 29){
+				giorno.setGiornoSettimana("lunedi");
+				giorno.setOre(8);
+			}else if(leDate == 2 || leDate == 9 || leDate == 16 || leDate == 23){
+				giorno.setGiornoSettimana("martedi");
+				giorno.setOre(8);
+			}else if(leDate == 3 || leDate == 10 || leDate == 17 || leDate == 24){
+				giorno.setGiornoSettimana("mercoledi");
+				giorno.setOre(8);
+			}else if(leDate == 4 || leDate == 11 || leDate == 18 || leDate == 25){
+				giorno.setGiornoSettimana("giovedi");
+				giorno.setOre(8);
+			}else if(leDate == 5 || leDate == 12 || leDate == 19 || leDate == 26){
+				giorno.setGiornoSettimana("venerdi");
+				giorno.setOre(6);
+			}else if(leDate == 6 || leDate == 13 || leDate == 20 || leDate == 27){
+				giorno.setGiornoSettimana("sabato");
+				giorno.setOre(0);
+			}else if(leDate == 7 || leDate == 14 || leDate == 21 || leDate == 28){
+				giorno.setGiornoSettimana("domenica");
+				giorno.setOre(0);
+			}
+			
+			giorni.add(giorno);
+			
+			leDate++;
+		}		
+		
+		return giorni;
+	}
+	// riempio la lista dei giorni del mese  per il dip2
+	public List<GiorniRapportino> setGiorniDipendente2(String data){		
+		List<GiorniRapportino> giorni = new ArrayList<GiorniRapportino>();
+		
+		// mi prendo il numero del giorno dalla data (01, 02 ecc)
+		Integer leDate = Integer.valueOf(data.substring(0, 2));
+		
+		// aggiungo 1 al numero del giorno
+		while(leDate < 30){	
+			GiorniRapportino giorno = new GiorniRapportino();			
+			giorno.setData( leDate + data.substring(2, 5));
+			
+			//aggiungo i giorni alla lista			
+			if(leDate == 1 || leDate == 8 || leDate == 15 || leDate == 22 || leDate == 29){
+				giorno.setGiornoSettimana("lunedi");
+				giorno.setOre(8);
+			}else if(leDate == 2 || leDate == 9 || leDate == 16 || leDate == 23){
+				giorno.setGiornoSettimana("martedi");
+				giorno.setOre(8);
+			}else if(leDate == 3 || leDate == 10 || leDate == 17 || leDate == 24){
+				giorno.setGiornoSettimana("mercoledi");
+				giorno.setOre(8);
+			}else if(leDate == 4 || leDate == 11 || leDate == 18 || leDate == 25){
+				giorno.setGiornoSettimana("giovedi");
+				giorno.setOre(8);
+			}else if(leDate == 5 || leDate == 12 || leDate == 19 || leDate == 26){
+				giorno.setGiornoSettimana("venerdi");
+				giorno.setOre(8);
+			}else if(leDate == 6 || leDate == 13 || leDate == 20 || leDate == 27){
+				giorno.setGiornoSettimana("sabato");
+				giorno.setOre(4);
+			}else if(leDate == 7 || leDate == 14 || leDate == 21 || leDate == 28){
+				giorno.setGiornoSettimana("domenica");
+				giorno.setOre(0);
+			}
+			
+			giorni.add(giorno);
+			
+			leDate++;
+		}		
+		
+		return giorni;
+	}	
+	// riempio la lista dei giorni del mese per il dip3	
+	public List<GiorniRapportino> setGiorniDipendente3(String data){		
+		List<GiorniRapportino> giorni = new ArrayList<GiorniRapportino>();
+		
+		// mi prendo il numero del giorno dalla data (01, 02 ecc)
+		Integer leDate = Integer.valueOf(data.substring(0, 2));
+		
+		// aggiungo 1 al numero del giorno
+		while(leDate < 30){	
+			GiorniRapportino giorno = new GiorniRapportino();			
 			giorno.setData( leDate + data.substring(2, 5));
 			
 			//aggiungo i giorni alla lista			
@@ -86,7 +174,7 @@ public class ClientRapportinoDipendente {
 		}		
 		
 		return giorni;
-	}
+	}	
 	
 	// setto i dati del rapportino
 	public RapportinoMensile setDatiRapportino(String nomeMese, String anno, List<GiorniRapportino> giorniMese){
@@ -124,7 +212,7 @@ public class ClientRapportinoDipendente {
 	}
 	// scrivo i dati sul file
 	public void scriviDati(List<Dipendente> listaDip){
-		String file = "rapportino.txt";
+		String file = "C:/Users/e3cboban.CORPGEN/workspace/ExamLab/rapportino.txt";
 		FileWriter writer = null;
 		try {
 			writer = new FileWriter(file);
