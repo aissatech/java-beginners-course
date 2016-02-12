@@ -1,0 +1,202 @@
+ANAGRAFICA: 
+	1 - Anna , Bianchi , a@gmail.com  Roma  Via della Pace 31  F
+
+		CURRICULUM: master , CEO
+
+		RAPPORTINO: lunedi , 1/02 , 8
+
+		RAPPORTINO: martedi , 2/02 , 8
+
+		RAPPORTINO: mercoledi , 3/02 , 8
+
+		RAPPORTINO: giovedi , 4/02 , 8
+
+		RAPPORTINO: venerdi , 5/02 , 8
+
+		RAPPORTINO: sabato , 6/02 , 0
+
+		RAPPORTINO: domenica , 7/02 , 0
+
+		RAPPORTINO: lunedi , 8/02 , 8
+
+		RAPPORTINO: martedi , 9/02 , 8
+
+		RAPPORTINO: mercoledi , 10/02 , 8
+
+		RAPPORTINO: giovedi , 11/02 , 8
+
+		RAPPORTINO: venerdi , 12/02 , 8
+
+		RAPPORTINO: sabato , 13/02 , 0
+
+		RAPPORTINO: domenica , 14/02 , 0
+
+		RAPPORTINO: lunedi , 15/02 , 8
+
+		RAPPORTINO: martedi , 16/02 , 8
+
+		RAPPORTINO: mercoledi , 17/02 , 8
+
+		RAPPORTINO: giovedi , 18/02 , 8
+
+		RAPPORTINO: venerdi , 19/02 , 8
+
+		RAPPORTINO: sabato , 20/02 , 0
+
+		RAPPORTINO: domenica , 21/02 , 0
+
+		RAPPORTINO: lunedi , 22/02 , 8
+
+		RAPPORTINO: martedi , 23/02 , 8
+
+		RAPPORTINO: mercoledi , 24/02 , 8
+
+		RAPPORTINO: giovedi , 25/02 , 8
+
+		RAPPORTINO: venerdi , 26/02 , 8
+
+		RAPPORTINO: sabato , 27/02 , 0
+
+		RAPPORTINO: domenica , 28/02 , 0
+
+		RAPPORTINO: lunedi , 29/02 , 8
+
+		ORE MENSILI DIPENDENTE1: 168
+
+	-------------------------------------------------------------
+
+	2 - Paolo , Pugliese , b@gmail.com  Roma  Via del Sole 31  M
+
+		CURRICULUM: laurea , Analista
+
+		RAPPORTINO: lunedi , 1/02 , 8
+
+		RAPPORTINO: martedi , 2/02 , 8
+
+		RAPPORTINO: mercoledi , 3/02 , 8
+
+		RAPPORTINO: giovedi , 4/02 , 8
+
+		RAPPORTINO: venerdi , 5/02 , 8
+
+		RAPPORTINO: sabato , 6/02 , 0
+
+		RAPPORTINO: domenica , 7/02 , 0
+
+		RAPPORTINO: lunedi , 8/02 , 8
+
+		RAPPORTINO: martedi , 9/02 , 8
+
+		RAPPORTINO: mercoledi , 10/02 , 8
+
+		RAPPORTINO: giovedi , 11/02 , 8
+
+		RAPPORTINO: venerdi , 12/02 , 8
+
+		RAPPORTINO: sabato , 13/02 , 0
+
+		RAPPORTINO: domenica , 14/02 , 0
+
+		RAPPORTINO: lunedi , 15/02 , 8
+
+		RAPPORTINO: martedi , 16/02 , 8
+
+		RAPPORTINO: mercoledi , 17/02 , 8
+
+		RAPPORTINO: giovedi , 18/02 , 8
+
+		RAPPORTINO: venerdi , 19/02 , 8
+
+		RAPPORTINO: sabato , 20/02 , 0
+
+		RAPPORTINO: domenica , 21/02 , 0
+
+		RAPPORTINO: lunedi , 22/02 , 8
+
+		RAPPORTINO: martedi , 23/02 , 8
+
+		RAPPORTINO: mercoledi , 24/02 , 8
+
+		RAPPORTINO: giovedi , 25/02 , 8
+
+		RAPPORTINO: venerdi , 26/02 , 8
+
+		RAPPORTINO: sabato , 27/02 , 0
+
+		RAPPORTINO: domenica , 28/02 , 0
+
+		RAPPORTINO: lunedi , 29/02 , 8
+
+		ORE MENSILI DIPENDENTE2: 168
+
+	-------------------------------------------------------------
+
+	3 - Carol , Neri , c@gmail.com  Roma  Via Taranto 95  F
+
+		CURRICULUM: diploma , Programmatore
+
+		RAPPORTINO: lunedi , 1/02 , 8
+
+		RAPPORTINO: martedi , 2/02 , 8
+
+		RAPPORTINO: mercoledi , 3/02 , 8
+
+		RAPPORTINO: giovedi , 4/02 , 8
+
+		RAPPORTINO: venerdi , 5/02 , 8
+
+		RAPPORTINO: sabato , 6/02 , 0
+
+		RAPPORTINO: domenica , 7/02 , 0
+
+		RAPPORTINO: lunedi , 8/02 , 8
+
+		RAPPORTINO: martedi , 9/02 , 8
+
+		RAPPORTINO: mercoledi , 10/02 , 8
+
+		RAPPORTINO: giovedi , 11/02 , 8
+
+		RAPPORTINO: venerdi , 12/02 , 8
+
+		RAPPORTINO: sabato , 13/02 , 0
+
+		RAPPORTINO: domenica , 14/02 , 0
+
+		RAPPORTINO: lunedi , 15/02 , 8
+
+		RAPPORTINO: martedi , 16/02 , 8
+
+		RAPPORTINO: mercoledi , 17/02 , 8
+
+		RAPPORTINO: giovedi , 18/02 , 8
+
+		RAPPORTINO: venerdi , 19/02 , 8
+
+		RAPPORTINO: sabato , 20/02 , 0
+
+		RAPPORTINO: domenica , 21/02 , 0
+
+		RAPPORTINO: lunedi , 22/02 , 8
+
+		RAPPORTINO: martedi , 23/02 , 8
+
+		RAPPORTINO: mercoledi , 24/02 , 8
+
+		RAPPORTINO: giovedi , 25/02 , 8
+
+		RAPPORTINO: venerdi , 26/02 , 8
+
+		RAPPORTINO: sabato , 27/02 , 0
+
+		RAPPORTINO: domenica , 28/02 , 0
+
+		RAPPORTINO: lunedi , 29/02 , 8
+
+		ORE MENSILI DIPENDENTE3: 168
+
+	-------------------------------------------------------------
+
+	-------------------------------------------------------------
+
+		ORE MENSILI TOTALI: 504
